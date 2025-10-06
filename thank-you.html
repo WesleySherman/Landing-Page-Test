@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+          <path d="M12 3l9 6-9 6-9-6 9-6z" stroke="white" stroke-width="1.5"/>
+          <path d="M21 12l-9 6-9-6" stroke="white" stroke-width="1.5" opacity=".6"/>
+        </svg>
+        Sherman & Co
+      </div>
+      <div class="badge">Thank you</div>
+    </header>
+
+    <section class="hero" style="grid-template-columns:1fr;">
+      <div>
+        <h1>You're on the list</h1>
+        <p>Thanks for subscribing. We will email you property updates and investment alerts shortly.</p>
+        <div class="form-card">
+          <p class="small">Next steps often include:</p>
+          <ul class="small">
+            <li>New or off-market listings that match your criteria</li>
+            <li>Viewing links and 360 walkthroughs</li>
+            <li>Municipal recovery notes and VAT/transfer duty notes</li>
+          </ul>
+          <p class="small">All amounts exclude VAT unless stated otherwise.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      © <span id="year"></span> Sherman & Co · <a href="index.html" style="color:#9cc0ff">Back to homepage</a>
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
